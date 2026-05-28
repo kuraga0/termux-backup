@@ -2,8 +2,8 @@
 
 ## Installation
 ``` sh
-mkdir -p /sdcard/Termux/Backups
 git clone https://github.com/kuraga0/termux-backup.git /sdcard/Termux/
+mkdir -p /sdcard/Termux/Backups
 ```
 
 ## Usage
