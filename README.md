@@ -9,13 +9,13 @@ mkdir -p /sdcard/Termux/Backups
 ## Usage
 Backup termux files (`/data/data/com.termux`)
 > note: some directories, including
-./files/usr/bin 
-./files/usr/lib 
-./files/usr/share 
+/data/data/com.termux/files/usr/bin
+/data/data/com.termux/files/usr/lib
+/data/data/com.termux/files/usr/share
 are in exclude.txt by default to save space
 
 ``` sh
-fish backup-prefix.fish backup
+fish backup-prefix.fish backup ./Backups/ # optional: --exclude exclude.txt
 ```
 Restore termux files:
 ``` sh
@@ -24,7 +24,7 @@ fish backup-prefix.fish restore Backups/<file>
 
 Backup packages:
 ``` sh
-fish backup-packages.fish backup
+fish backup-packages.fish backup ./Backups
 ```
 Restore packages:
 ``` sh
