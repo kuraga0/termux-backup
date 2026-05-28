@@ -12,7 +12,7 @@ switch $argv[1]
 			  if test -z "$argv[2]"
             usage
         end
-        dpkg --get-selections | grep -v deinstall | awk '{print $1}' > $argv[2]/packages_(date +%Y_%m_%d_%H-%M).txt
+        dpkg --get-selections | grep -v deinstall | awk '{print $1}' > $argv[2]/termux_packages_(date +%Y-%m-%d_%H:%M).txt
     case restore
         if test -z "$argv[2]"
             usage
