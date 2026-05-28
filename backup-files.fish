@@ -21,7 +21,7 @@ end
 switch $argv[1]
     case backup
         set -l out_dir (realpath "$argv[2]")
-        set -l out_file "$out_dir/termux_files_$(date +%Y-%m-%d_%H:%M).tar.zst"
+        set -l out_file "$out_dir/termux_files_$(date +%Y-%m-%d_%H-%M).tar.zst"
 
         tar -cv \
             --ignore-failed-read \
