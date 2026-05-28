@@ -1,15 +1,15 @@
-./cache
-./usr/var/cache
-./.cache
-./tmp
-./files/home/.npm/_cacache
-./files/home/.cache
-./files/home/.suroot
+/data/data/com.termux/cache
+/data/data/com.termux/usr/var/cache
+/data/data/com.termux/.cache
+/data/data/com.termux/tmp
+/data/data/com.termux/files/home/.npm/_cacache
+/data/data/com.termux/files/home/.cache
+/data/data/com.termux//files/home/.suroot
 */__pycache__
 */node_modules
 
-./files/usr/bin
-./files/usr/lib
-./files/usr/share
-./files/usr/include
-./files/usr/libexec
+/data/data/com.termux/files/usr/bin
+/data/data/com.termux/files/usr/lib
+/data/data/com.termux/files/usr/share
+/data/data/com.termux/files/usr/include
+/data/data/com.termux/files/usr/libexec
