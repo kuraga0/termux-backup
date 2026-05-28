@@ -2,8 +2,8 @@
 
 ## Installation
 ``` sh
-git clone https://github.com/kuraga0/termux-backup.git /sdcard/Termux/
-mkdir -p /sdcard/Termux/Backups
+git clone https://github.com/kuraga0/termux-backup.git
+cd termux-backup
 ```
 
 ## Usage
@@ -13,6 +13,8 @@ Backup termux files (`/data/data/com.termux`)
 /data/data/com.termux/files/usr/lib
 /data/data/com.termux/files/usr/share
 are in exclude.txt by default to save space
+
+> caution: create the directory before backuping
 
 ``` sh
 fish backup-prefix.fish backup ./Backups/ # optional: --exclude exclude.txt
