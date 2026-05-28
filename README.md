@@ -8,12 +8,12 @@ mkdir -p /sdcard/Termux/Backups
 
 ## Usage
 Backup termux files (`/data/data/com.termux`)
-*note: some directories, including 
+> note: some directories, including
 ./files/usr/bin 
 ./files/usr/lib 
 ./files/usr/share 
 are in exclude.txt by default to save space
-*
+
 ``` sh
 fish backup-prefix.fish backup
 ```
