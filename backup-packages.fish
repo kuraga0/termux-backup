@@ -17,12 +17,12 @@ switch $argv[1]
         if test -z "$argv[2]"
             usage
         end
-        set archive $argv[2]
-        if not test -f $archive
-            echo "File not found: $archive"
+        set file $argv[2]
+        if not test -f "$file"
+            echo "File not found: $file"
             exit 1
         end
-        xargs apt install -y < $archive
+        xargs apt install -y < "$file"
 
     case '*'
         usage

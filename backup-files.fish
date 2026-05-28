@@ -24,11 +24,11 @@ switch $argv[1]
             usage
         end
         set archive $argv[2]
-        if not test -f $archive
+        if not test -f "$archive"
             echo "File not found: $archive"
             exit 1
         end
-        zstd -d -c $archive | tar -xv -C $termux_dir
+        zstd -d -c "$archive" | tar -xv -C $termux_dir
 
     case '*'
         usage
