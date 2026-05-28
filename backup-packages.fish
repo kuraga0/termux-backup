@@ -3,7 +3,7 @@
 set backup_dir /sdcard/Termux/Backups
 
 function usage
-    echo "Usage: backup-packages.fish [backup|restore]"
+    echo "Usage: fish backup-packages.fish [backup|restore]"
     echo "  backup           - create new backup"
     echo "  restore <file>   - restore from archive"
     exit 1

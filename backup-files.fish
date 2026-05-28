@@ -5,7 +5,7 @@ set termux_dir /data/data/com.termux
 set exclude_file /sdcard/Termux/exclude.txt
 
 function usage
-    echo "Usage: backup.fish [backup|restore] [archive]"
+    echo "Usage: fish backup.fish [backup|restore] [archive]"
     echo "  backup           - create new backup"
     echo "  restore <file>   - restore from archive"
     exit 1
