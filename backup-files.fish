@@ -1,12 +1,11 @@
 #!/usr/bin/env fish
 
-set backup_dir /sdcard/Termux/Backups
 set termux_dir /data/data/com.termux
 set exclude_file /sdcard/Termux/exclude.txt
 
 function usage
     echo "Usage: fish backup.fish [backup|restore] [archive]"
-    echo "  backup           - create new backup"
+    echo "  backup  <dir>    - create new backup"
     echo "  restore <file>   - restore from archive"
     exit 1
 end
@@ -18,7 +17,7 @@ switch $argv[1]
             --ignore-failed-read \
             --warning=no-file-changed \
             --exclude-from=$exclude_file \
-            ./ | zstd -T0 -4 -o $backup_dir/(date +%Y_%m_%d_%H-%M).tar.zst
+            ./ | zstd -T0 -4 -o $argv[2]/(date +%Y_%m_%d_%H-%M).tar.zst
 
     case restore
         if test -z "$argv[2]"
