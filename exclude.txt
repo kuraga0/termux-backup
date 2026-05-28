@@ -1,0 +1,15 @@
+./cache
+./usr/var/cache
+./.cache
+./tmp
+./files/home/.npm/_cacache
+./files/home/.cache
+./files/home/.suroot
+*/__pycache__
+*/node_modules
+
+./files/usr/bin
+./files/usr/lib
+./files/usr/share
+./files/usr/include
+./files/usr/libexec
