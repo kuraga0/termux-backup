@@ -32,6 +32,3 @@ Restore packages:
 ``` sh
 fish backup-packages.fish restore Backups/<file>
 ```
-
-By default all scripts use `/sdcard/Termux/Backups`.
-To change that, edit `backup_dir` in scripts code.
