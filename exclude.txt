@@ -1,3 +1,5 @@
+./Backups
+
 /data/data/com.termux/cache
 /data/data/com.termux/usr/var/cache
 /data/data/com.termux/.cache
