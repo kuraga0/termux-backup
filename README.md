@@ -17,11 +17,11 @@ are in exclude.txt by default to save space
 > caution: create the directory before backuping
 
 ``` sh
-fish backup-prefix.fish backup ./Backups/ # optional: --exclude exclude.txt
+fish backup-files.fish backup ./Backups/ # optional: --exclude exclude.txt
 ```
 Restore termux files:
 ``` sh
-fish backup-prefix.fish restore Backups/<file>
+fish backup-files.fish restore Backups/<file>
 ```
 
 Backup packages:
