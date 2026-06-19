@@ -42,7 +42,7 @@ switch $argv[1]
             exit 1
         end
 
-        zstd -d -c "$archive" | tar -xv -C $termux_dir
+        zstd -d -c "$archive" | tar -xv -C $termux_dir --strip-components=3
 
     case '*'
         usage
